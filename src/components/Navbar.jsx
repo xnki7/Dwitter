@@ -16,6 +16,7 @@ function Navbar() {
             src="https://cdn-icons-png.flaticon.com/512/2403/2403731.png"
             alt=""
           />
+          <p>Dwitter</p>
         </div>
         <div className="menuDetail">
           <HomeIcon fontSize="large" />
@@ -58,10 +59,8 @@ function Navbar() {
       <button id="dweet">Dweet</button>
       <div className="connectWallet">
         <button id="connectwallet">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/7542/7542137.png"
-            alt=""
-          />
+          {/* eslint-disable-next-line */}
+          <img src={require("./pfp2.png")} />
           <p>Connect Wallet</p>
         </button>
       </div>

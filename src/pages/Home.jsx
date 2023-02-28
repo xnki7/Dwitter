@@ -1,13 +1,30 @@
-import React from 'react'
-import "./Home.css"
-import Navbar from '../components/Navbar'
+import React from "react";
+import "./Home.css";
+import Navbar from "../components/Navbar";
+import Dweet from "../components/Dweet";
 
 function Home() {
   return (
-    <div className='Home'>
-        <Navbar/>
+    <div className="Home">
+      <div className="leftContent">
+        <Navbar />
+      </div>
+      <div className="rightContent">
+        <div className="head">
+          <h1>Home</h1>
+          <input type="text" />
+        </div>
+        <div className="head2">
+          <p>For You</p>
+          <p>Following</p>
+        </div>
+        <hr />
+        <Dweet />
+        <p id="show">Showing 500 tweets.</p>
+        <hr />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
