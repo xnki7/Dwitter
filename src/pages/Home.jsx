@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../components/Navbar";
 import Dweet from "../components/Dweet";
+import Dweets from "../components/Dweets";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         <Dweet />
         <p id="show">Showing 500 tweets.</p>
         <hr />
+        <Dweets/>
       </div>
     </div>
   );
